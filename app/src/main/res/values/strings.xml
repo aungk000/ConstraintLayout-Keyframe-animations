@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Constraint Keyframe</string>
+    <string name="item_list_label">Keyframe animations</string>
+    <string name="item_detail_label">{title}</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentItemList">
+
+    <fragment
+        android:id="@+id/fragmentItemList"
+        android:name="me.ako.constraintlayoutkeyframe.presentation.FragmentItemList"
+        android:label="@string/item_list_label">
+        <action
+            android:id="@+id/action_fragmentItemList_to_fragmentItemDetail"
+            app:destination="@id/fragmentItemDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentItemDetail"
+        android:name="me.ako.constraintlayoutkeyframe.presentation.FragmentItemDetail"
+        android:label="@string/item_detail_label">
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+</navigation>
