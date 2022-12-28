@@ -8,4 +8,24 @@ In this case, every child view in two layouts must have an id and the id needs t
 
 Note: Only the constraint attributes are animated such as positions. Other attributes such as color, font size are not applied.
 
+**Code**
+
+```kotlin
+  // custom transition
+  val transition = ChangeBounds()
+  transition.interpolator = AnticipateOvershootInterpolator(1.0f)
+  transition.duration = 1000
+
+  val constraintSet = ConstraintSet()
+  constraintSet.clone(requireContext(), targetLayoutId)
+  
+  // ConstraintLayout from current layout
+  val constraintLayout = binding.constraintLayout
+
+  TransitionManager.beginDelayedTransition(constraintLayout, transition)
+  constraintSet.applyTo(constraintLayout)
+```
+
+**Demo**
+
 ![screenrecord](/gif/keyframe-animations.gif)
