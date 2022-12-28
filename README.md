@@ -1,5 +1,4 @@
-# ConstraintLayout-Keyframe-animations
-ConstraintLayout Keyframe animations example
+# ConstraintLayout-Keyframe-animations Example
 
 **How this works?**
 
