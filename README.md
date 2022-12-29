@@ -1,6 +1,6 @@
 # ConstraintLayout-Keyframe-animations Example
 
-**How this works?**
+# How this works?
 
 Constraint Keyframe animation is not about changing layout.
 It just get the ConstraintSet from target layout and apply it to current layout.
@@ -8,7 +8,7 @@ In this case, every child view in two layouts must have an id and the id needs t
 
 Note: Only the constraint attributes are animated such as positions. Other attributes such as color, font size are not applied.
 
-**Code**
+# Code
 
 ```kotlin
   // custom transition
@@ -26,9 +26,9 @@ Note: Only the constraint attributes are animated such as positions. Other attri
   constraintSet.applyTo(constraintLayout)
 ```
 
-**Demo**
+# Demo
 
 ![screenrecord](/gif/keyframe-animations.gif)
 
-**Resource**
+# Resource
 [Keyframe animations](https://developer.android.com/develop/ui/views/layout/constraint-layout#keyframe_animations)
