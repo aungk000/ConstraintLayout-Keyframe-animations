@@ -31,4 +31,4 @@ Note: Only the constraint attributes are animated such as positions. Other attri
 ![screenrecord](/gif/keyframe-animations.gif)
 
 **Resource**
-https://developer.android.com/develop/ui/views/layout/constraint-layout#keyframe_animations
+[Keyframe animations](https://developer.android.com/develop/ui/views/layout/constraint-layout#keyframe_animations)
